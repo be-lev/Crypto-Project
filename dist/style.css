@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* navbar */
+.navbar-brand h4 {
+    color: #0f9d28;
+    font-weight: 800;
+}
+.navbar .nav-link {
+    color: #009432;
+    font-size: larger;
+}
+
+.navbar-brand img{
+    margin-left: 10px;
+}
+/* Coins-tab */
+.coins-container {
+    background-image: url("../assets/images/Matrix-backround.png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+/* alert no coin selected*/
+.modal1 {
+    position: absolute;
+    z-index: 3;
+    background-color: indianred;
+}
+
+/* Coins cards */
+.main-card {
+    z-index: 2;
+    font-weight: bolder;
+}
+.main-card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../assets/images/card-matrix-blue.jpg");
+    opacity: 0.3;
+}
+/* More info  styling */
+.more-info {
+    height: 150px;
+    display: none;
+}
+.coin-img {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+}
+#coin-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    height: 150px;
+    display: inline;
+}
+#coin-table th {
+    background-color: #25ccf7;
+    text-align: center;
+}
+#coin-table td {
+    background-color: #d2dae2;
+    text-indent: 3px;
+    letter-spacing: 0.5x;
+}
+
+#coin-table th,
+#coin-table td {
+    border: 0.5px solid black;
+}
+
+/* Too many coins selected model styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.modal-header {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #000000, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #000000, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 100%;
+    color: #0f9d28;
+}
+.modal-header > p{
+font-size: large;
+}
+.modal-content {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    color: #56e2a6;
+    font-size: medium;
+    /* display: block; */
+}
+
+.modal-coins{
+    display: flex;
+    
+}
+
+/* modal-Button */
+.modal .close {
+    color: #56e2a6;
+    /* float: right; */
+    font-size: 26px;
+    font-weight: bold;
+    border: 1px solid #56e2a6;
+}
+.modal .close:hover,
+.modal .close:focus {
+    color: greenyellow;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* reports-tab */
+#reports-container {
+    background-image: url("../assets/images/Matrix-backround.png");
+    margin: 20px;
+    
+}
+
+/* About tab */
+.about-container{
+    display: flex;
+    z-index: 2;
+}
+
+.about-container::before{
+    background-image: url("../assets/images/Matrix-backround.png");
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+    height: 100vh;
+}
+.appDescription-container{
+    border: 1px solid black;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 50 px;
+   display: flex;
+   justify-content: space-around;
+   
+    
+}
