@@ -151,9 +151,13 @@ font-size: large;
 /* reports-tab */
 #reports-container {
     background-image: url("../assets/images/Matrix-backround.png");
-    margin: 20px;
+    
     
 }
+
+.canvasjs-chart-canvas{
+    margin-top: 20px;
+} 
 
 /* About tab */
 .about-container{
