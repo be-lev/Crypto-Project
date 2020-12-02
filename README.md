@@ -1,4 +1,5 @@
 # Crypto currency SPA💲💹
+[Watch live site](https://be-lev.github.io/Crypto-Project/)
 ## how to run the project 
 ### assuming you have node and typescript installed.
 1. clone the repository.
